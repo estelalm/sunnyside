@@ -197,28 +197,14 @@ header .arrow-down{
 }
 
 .images{
-    height: 400px;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-.images .img{
-    width: 50vw;
-    background-size: cover;
+.images img{
+    width: 100%;
 }
-.images .img1{
-    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
-}
-.images .img2{
-    background-image: url(./images/mobile/image-gallery-orange.jpg);
-}
-.images .img3{
-    background-image: url(./images/mobile/image-gallery-cone.jpg);
-}
-.images .img4{
-    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
-}
+
 
 footer{
     display: flex;
@@ -261,7 +247,8 @@ a{
 
 
 
-@media(mim-width:){
+@media(min-width: 465px){
+
 
 }
 
