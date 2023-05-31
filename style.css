@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul, ol, li{
+    list-style: none;
+}
 /*variável*/
 :root{
     --text-font: 'Barlow', sans-serif;
@@ -243,13 +246,6 @@ a{
     text-decoration: none;
     color: var(--footer);
     font-weight: 600;
-}
-
-
-
-@media(min-width: 465px){
-
-
 }
 
 
