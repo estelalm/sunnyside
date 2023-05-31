@@ -247,6 +247,7 @@ footer{
 .social{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .social .social__icon{
     margin: 15px;
@@ -258,6 +259,11 @@ a{
     font-weight: 600;
 }
 
+
+
+@media(mim-width:){
+
+}
 
 
 
