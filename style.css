@@ -47,6 +47,9 @@ header .logo{
     font-size: 1.5rem;
     font-weight: 700;
 }
+header .menu{
+    display: none;
+}
 
 header h1{
     font-family: var(--title-font);
@@ -250,3 +253,182 @@ a{
 
 
 
+@media(min-width: 465px){
+
+    header{
+        height:95vh;
+        background-image: url(./images/desktop/image-header.jpg);
+        background-color: #3EBFFF;
+        background-size: 85vw;
+        background-repeat: no-repeat;
+        grid-template-rows: 15vh 20vh 1fr;
+    }
+    header nav{
+        height: 8vh;
+        align-items: center;
+    }
+    header .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30vw;
+    }
+    header .menu a{
+        color: var(--white);
+        height: 1vh;
+        display: flex;
+        align-items: center;
+    }
+   header .menu .contact{
+        background-color: var(--white);
+        color: black;
+        font-family: var(--title-font);
+        border-radius: 200px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 1.5vw 2vw;
+    }
+    header .logo{
+        font-size: 2rem;
+    }
+    .menu-hamburger{
+        display: none;
+    }
+    header h1{
+        font-family: var(--title-font);
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        place-self: start center;
+        text-align: center;
+    }
+    header .arrow-down{
+        width: 2vw;
+        place-self: start center;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info img{
+        width: 95%;
+    }
+
+    .description{
+        padding: 5vw;
+        padding-right: 10vw;
+        place-items: center start;
+    }
+    
+    .description__title{
+        text-align: left;
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    
+    .description__text{
+        text-align: left;
+        line-height: 2rem;
+        padding: 0px;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .container.graphic{
+        background-image: url(./images/desktop/image-graphic-design.jpg);
+        background-position: center;
+    }
+    .container.photography{
+        background-image: url(./images/desktop/image-photography.jpg);
+        background-position: center;
+    }
+
+    .container .description{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 1.3rem;
+    }
+
+    .container .description__text{
+        font-size: 1.04rem;
+        line-height: 1.5rem;
+        padding: 0px 1rem;
+        text-align: center;
+    }
+
+    .container .description__title{
+        text-align: center;
+    }
+
+    .testimonials{
+        padding: 8vw;
+        height: 100vh;
+    }
+    .testimonials-title{
+        padding: 1vw;
+        font-size: 1.5rem;
+    }
+    .testimonials-clients{
+        display: flex;
+    }
+
+    .client__text{
+        padding: 0px 6vw;
+    }
+
+
+    .images{
+        display: flex;
+        width: 100%;
+    }
+
+    .images img{
+        width: 25%;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        background-color: var(--footer-bg);
+        padding: 2vw 0px;
+        text-align: center;
+        justify-content: center;
+        gap: 36px;
+        color: var(--graphic-text);
+        align-items: center;
+    }
+    
+    .footer-title{
+        font-weight: 900;
+        opacity: .8;
+        letter-spacing: .05rem;
+        font-size: 2.3rem;
+    }
+    .links{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+        width: 25%;
+        margin-bottom: 4vh;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social .social__icon{
+        margin: 15px;
+    }
+
+}
